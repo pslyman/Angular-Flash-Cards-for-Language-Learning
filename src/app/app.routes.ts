@@ -7,22 +7,22 @@ import { FlashCardsComponent } from "./components/flash-cards/flash-cards.compon
 export const routes: Routes = [
     { path: "home", component: HomeComponent },
     {
-        path: "sets/:setId",
+        path: "sets",
         component: SetsComponent,
         children: [
             {
-                path: "overview",
+                path: "overview/:setId",
                 component: SetOverviewComponent
             },
             {
-                path: "flash",
+                path: "review/:setId",
                 component: FlashCardsComponent
             },
             {
-                path: "",
-                redirectTo: "overview",
+                path: "**",
+                redirectTo: "/home",
                 pathMatch: "full"
-            }
+            },
         ]
     },
     {

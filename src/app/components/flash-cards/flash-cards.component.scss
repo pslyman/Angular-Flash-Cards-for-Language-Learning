@@ -1,0 +1,14 @@
+.card-group {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .top {
+        height: 50%;
+    }
+
+    .bottom {
+        cursor: pointer;
+        height: 50%;
+    }
+}

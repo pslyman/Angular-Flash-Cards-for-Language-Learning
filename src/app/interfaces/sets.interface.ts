@@ -2,10 +2,10 @@ export interface Set {
   id: number;
   name: string;
   description: string;
-  cards: Cards[];
+  cards: Card[];
 }
 
-export interface Cards {
+export interface Card {
   front: string;
   back: string;
   extra: string;

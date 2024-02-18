@@ -1,1 +1,14 @@
-<p>set-overview works!</p>
+<p>{{set.description}}</p>
+
+<a role="button" [routerLink]="['home']">Back</a>
+<br>
+<a role="button" [routerLink]="['/sets/review', setId]">Review</a>
+<br>
+<br>
+<a role="button" href="javascript:void(0)" (click)="flipPreviews()">{{ viewFront ? 'View backs' : 'View fronts' }}</a>
+
+<ol>
+    <li *ngFor="let cards of set.cards">
+        {{ viewFront ? cards.front : cards.back }}
+    </li>
+</ol>
