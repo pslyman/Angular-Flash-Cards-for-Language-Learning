@@ -1,10 +1,10 @@
 import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute, RouterOutlet } from "@angular/router";
 
 @Component({
   selector: "app-sets",
   standalone: true,
-  imports: [],
+  imports: [RouterOutlet],
   templateUrl: "./sets.component.html",
   styleUrl: "./sets.component.scss",
 })
@@ -13,5 +13,7 @@ export class SetsComponent implements OnInit {
   setId = "";
   ngOnInit(): void {
     this.setId = this.route.snapshot.paramMap.get("setId") ?? "";
+    
+    console.log(this.setId);
   }
 }

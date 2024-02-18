@@ -1,1 +1,6 @@
-<p>home works!</p>
+<h3>Angular Flash Cards for Language Learning</h3>
+<p>Currently contained are some early flash card sets for Korean. Choose a set below.</p>
+
+<div *ngFor="let set of cardSets">
+  <a routerLink="/sets/{{ set.id }}">{{ set.name }}</a>
+</div>
