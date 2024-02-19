@@ -1,17 +1,19 @@
-<p>{{set.description}}</p>
+<div @fadeIn>
+  <p>{{ set.description }}</p>
 
-<div class="center-buttons">
+  <div class="center-buttons button-thirds">
     <a role="button" [routerLink]="['home']">Back</a>
-  
-    <a role="button" href="javascript:void(0)" (click)="flipPreviews()"
-        >{{ viewFront ? 'View backs' : 'View fronts' }}</a
-    >
-    
-  <a role="button" [routerLink]="['/sets/review', setId]">Review</a>
+
+    <a role="button" href="javascript:void(0)" (click)="flipPreviews()">{{
+      viewFront ? "View backs" : "View fronts"
+    }}</a>
+
+    <a role="button" [routerLink]="['/sets/review', setId]">Review</a>
+  </div>
 </div>
 
-<ol>
-    <li *ngFor="let cards of set.cards">
-        {{ viewFront ? cards.front : cards.back }}
-    </li>
+<ol [@stagger]="set.cards.length">
+  <li *ngFor="let cards of set.cards">
+    {{ viewFront ? cards.front : cards.back }}
+  </li>
 </ol>

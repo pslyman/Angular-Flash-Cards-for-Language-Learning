@@ -1,10 +1,15 @@
-<h3>Angular Flash Cards for Language Learning</h3>
-<p class="center-sub-header">Currently contained are some early flash card sets for Korean. Choose a set below.</p>
-
-<ul>
-<div *ngFor="let set of cardSets">
-  <li>
-  <a routerLink="/sets/overview/{{ set.id }}">{{ set.name }}</a>
-  </li>
+<div @fadeIn>
+  <h3>Angular Flash Cards for Language Learning</h3>
+  <p class="center-sub-header">
+    Currently contained are some early flash card sets for Korean. Choose a set
+    below.
+  </p>
 </div>
+
+<ul [@stagger]="cardSets.length">
+  <div *ngFor="let set of cardSets">
+    <li>
+      <a routerLink="/sets/overview/{{ set.id }}">{{ set.name }}</a>
+    </li>
+  </div>
 </ul>

@@ -1,0 +1,12 @@
+.button-thirds {
+  a {
+    width: 33.3333%;
+    text-align: center;
+  }
+  a:first-child {
+    text-align: left;
+  }
+  a:nth-child(3) {
+    text-align: right;
+  }
+}

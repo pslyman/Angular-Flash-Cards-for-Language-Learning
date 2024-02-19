@@ -3,6 +3,7 @@ import { ActivatedRoute, RouterModule } from "@angular/router";
 import { Card, Set } from "../../interfaces/sets.interface";
 import { cardSets } from "../../constants/sets.constants";
 import { CommonModule } from "@angular/common";
+import { fadeInAnimation, slideFadeInAnimation, subtleFadeInAnimation } from "../../constants/animations.constants";
 
 @Component({
   selector: "app-flash-cards",
@@ -10,6 +11,7 @@ import { CommonModule } from "@angular/common";
   imports: [CommonModule, RouterModule],
   templateUrl: "./flash-cards.component.html",
   styleUrl: "./flash-cards.component.scss",
+  animations: [fadeInAnimation, slideFadeInAnimation, subtleFadeInAnimation],
 })
 export class FlashCardsComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}

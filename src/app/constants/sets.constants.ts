@@ -149,7 +149,7 @@ export const cardSets: Set[] = [
         extra: "",
       },
       {
-        front: "ㅈ ",
+        front: "ㅈ",
         back: 'Between "ch" and "j", light with the tongue.',
         extra: "",
       },
@@ -159,17 +159,17 @@ export const cardSets: Set[] = [
         extra: "오 = eo. 호 = heo.",
       },
       {
-        front: "ㅊ ",
+        front: "ㅊ",
         back: 'ㅊ= added friction and air to ㅈ (between "j" and "ch"). ',
         extra: "",
       },
       {
-        front: "ㅆ ",
+        front: "ㅆ",
         back: '"S"',
         extra: "Less air escape",
       },
       {
-        front: "ㅉ ",
+        front: "ㅉ",
         back: 'Added friction to (ㅈ) like "t". ',
         extra: "",
       },
@@ -181,7 +181,7 @@ export const cardSets: Set[] = [
     description: "Review your diphthongs, or compound vowels.",
     cards: [
       {
-        front: "ㅘ ",
+        front: "ㅘ",
         back: '"Wah". ',
         extra: "",
       },
