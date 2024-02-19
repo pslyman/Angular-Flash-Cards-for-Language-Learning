@@ -32,7 +32,25 @@ export class FlashCardsComponent implements OnInit {
     const findSet = cardSets.find((set) => set.id.toString() === this.setId);
     if (findSet) {
       this.set = findSet;
+      this.set.cards = this.shuffle(this.set.cards);
     }
+  }
+
+  shuffle(cards: Card[]): Card[] {
+    let currentIndex = cards.length,
+      randomIndex;
+
+    while (currentIndex > 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      [cards[currentIndex], cards[randomIndex]] = [
+        cards[randomIndex],
+        cards[currentIndex],
+      ];
+    }
+
+    return cards;
   }
 
   newCard(modifier: number) {
