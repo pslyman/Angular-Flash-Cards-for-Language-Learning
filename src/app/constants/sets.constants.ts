@@ -7,32 +7,32 @@ export const cardSets: Set[] = [
     description: "Review your basic vowels.",
     cards: [
       {
-        front: "What sound does 으 make?",
+        front: "으",
         back: '"eu"',
         extra: "Neutral (unhappy face) sound.",
       },
       {
-        front: "What sound does 오 make? ",
-        back: '"o"',
+        front: "오 ",
+        back: '"oh"',
         extra: `The "o" sound from "bold".`,
       },
       {
-        front: "What sound does 우 make? ",
+        front: "우 ",
         back: '"Ooh"',
         extra: "",
       },
       {
-        front: "What sound does 이 make?",
+        front: "이",
         back: '"ee"',
         extra: "",
       },
       {
-        front: "What sound does 어 make?",
+        front: "어",
         back: '"uh", or "eo"',
         extra: "",
       },
       {
-        front: "What sound does 아 make?",
+        front: "아",
         back: '"ah"',
         extra: "",
       },
@@ -70,64 +70,64 @@ export const cardSets: Set[] = [
     description: "Review your introductory consonants.",
     cards: [
       {
-        front: "What sound does ㄱ make?",
+        front: "ㄱ",
         back: '"G" or "K", a "clicky" G. ',
         extra:
           "Push your tongue forward slightly more forward than an English G would normally require.",
       },
       {
-        front: "What sound does ㅋ make?",
-        back: 'ㅋ = "K".',
+        front: "ㅋ",
+        back: '"K".',
         extra: "",
       },
       {
-        front: "What sound does ㄴ make? ",
+        front: "ㄴ ",
         back: '"N" sound',
         extra: 'Tongue bottom of upper teeth. It\'s a "soft N".',
       },
       {
-        front: "What sound does ㄷ make?",
-        back: "ㄷ = D/Th",
+        front: "ㄷ",
+        back: "D/Th",
         extra: "Keep tongue on top lower teeth",
       },
       {
-        front: "What sound does ㄹ make?",
+        front: "ㄹ",
         back: 'A rolling "R". Can resemble the "L" sound in the middle of a word. ',
         extra: "",
       },
       {
-        front: "What sound does ㅁ make?",
+        front: "ㅁ",
         back: '"M"',
         extra: "",
       },
       {
-        front: "What sound does ㅂ make?",
+        front: "ㅂ",
         back: 'A soft "B".',
         extra: "",
       },
       {
-        front: "What sound does ㄲ make?",
+        front: "ㄲ",
         back: '"G".',
         extra: "",
       },
       {
-        front: "What sound does ㄸ make?",
+        front: "ㄸ",
         back: '"D". ',
         extra: "",
       },
       {
-        front: "What sound does ㅌ make?",
+        front: "ㅌ",
         back: '"T".',
         extra: "",
       },
       {
-        front: "What sound does ㅍ make?",
+        front: "ㅍ",
         back: '"P".',
         extra: "",
       },
       {
-        front: "What sound does ㅃ make?",
-        back: 'ㅃ = "B".',
+        front: "ㅃ",
+        back: '"B".',
         extra: "",
       },
       {
@@ -144,12 +144,12 @@ export const cardSets: Set[] = [
     description: "Review ㅅ variations, and the ㅎ sound.",
     cards: [
       {
-        front: "What sound does ㅅ make?",
+        front: "ㅅ",
         back: 'A soft "s"',
         extra: "",
       },
       {
-        front: "What sound does ㅈ make? ",
+        front: "ㅈ ",
         back: 'Between "ch" and "j", light with the tongue.',
         extra: "",
       },
@@ -159,17 +159,17 @@ export const cardSets: Set[] = [
         extra: "오 = eo. 호 = heo.",
       },
       {
-        front: "What sound does ㅊ make? ",
+        front: "ㅊ ",
         back: 'ㅊ= added friction and air to ㅈ (between "j" and "ch"). ',
         extra: "",
       },
       {
-        front: "What sound does ㅆ make? ",
-        back: 'ㅆ = "S"',
+        front: "ㅆ ",
+        back: '"S"',
         extra: "Less air escape",
       },
       {
-        front: "What sound does ㅉ make? ",
+        front: "ㅉ ",
         back: 'Added friction to (ㅈ) like "t". ',
         extra: "",
       },
@@ -181,48 +181,48 @@ export const cardSets: Set[] = [
     description: "Review your diphthongs, or compound vowels.",
     cards: [
       {
-        front: "What sound does ㅘ make? ",
+        front: "ㅘ ",
         back: '"Wah". ',
         extra: "",
       },
       {
-        front: "What sound does ㅝ make?",
+        front: "ㅝ",
         back: '"Wuh"',
         extra: "",
       },
       {
-        front: "What sound doesㅐmake?",
+        front: "ㅐ",
         back: 'Ai without a mouth change, like "eh"',
         extra: "",
       },
       {
-        front: "What sound doesㅔmake?",
+        front: "ㅔ",
         back: 'Ai, or "eh" much like ㅐ(which is more open). ',
         extra: "In most cases, functionally identical",
       },
       {
-        front: "What sound does ㅞ make?",
+        front: "ㅞ",
         back: '"Weh", but with a hint of "ai"',
         extra: "",
       },
       {
-        front: "What sound does ㅚ make?",
+        front: "ㅚ",
         back: '"Weh" with an "ai" sound',
         extra:
           'This one is less intuitive because there\'s no "ee" or "oh" sounds',
       },
       {
-        front: "What sound does ㅙ make?",
+        front: "ㅙ",
         back: '"Weh", but with a hint of "ai"',
         extra: "",
       },
       {
-        front: "What sound does ㅟ make?",
+        front: "ㅟ",
         back: '"We"',
         extra: "",
       },
       {
-        front: "What sound does ㅢ make?",
+        front: "ㅢ",
         back: "eu-ee",
         extra: "This is phonetic, say as seen. ",
       },
@@ -246,7 +246,7 @@ export const cardSets: Set[] = [
     description: "Quick review of batchim and ending sounds.",
     cards: [
       {
-        front: "What sound does ㅇ make at the end of a block?",
+        front: "ㅇ ending in a syllable block.",
         back: 'Ending "ng" sound, like sting and ring. ',
         extra: "",
       },
@@ -261,7 +261,8 @@ export const cardSets: Set[] = [
   {
     id: 9,
     name: "Grammar - Beginner 1",
-    description: "Review your grammar introduction with basic words and phrases.",
+    description:
+      "Review your grammar introduction with basic words and phrases.",
     cards: [
       {
         front: "안녕하세요",
@@ -278,7 +279,7 @@ export const cardSets: Set[] = [
       {
         front: "네",
         back: "Yes",
-        extra: "I agree. Affirmative. Yes? Uh huh. Yeah. ",
+        extra: "I agree. Affirmative. Yes? Uh huh. Yeah.",
       },
       {
         front: "아니요",
@@ -320,12 +321,13 @@ export const cardSets: Set[] = [
   {
     id: 10,
     name: "Grammar - Beginner 2",
-    description: 'Review "this", states of being, contextual locations, and more.',
+    description:
+      'Review "this", states of being, contextual locations, and more.',
     cards: [
       {
         front: "이거 (in 이거 뭐예요)",
         back: "This (thing)",
-        extra: '"What is THIS?" Also 이거 물이에요 - "This is water"',
+        extra: 'What is "THIS?" Also 이거 물이에요 - "This is water"',
       },
       {
         front: "뭐 in 뭐예요",
@@ -335,7 +337,7 @@ export const cardSets: Set[] = [
       {
         front: "이에요 and 예요",
         back: '"it is" or "is it"',
-        extra: "",
+        extra: "The state of being.",
       },
       {
         front: "이",
