@@ -1,45 +1,64 @@
 <div class="center-buttons">
-    <a role="button" routerLink="/sets/overview/{{ set.id }}">Back</a>
-    <br />
-    <a
-        role="button"
-        href="javascript:void(0)"
-        *ngIf="!hasStarted"
-        (click)="reverseCards = !reverseCards;"
-        >Reverse cards</a
-    >
+  <a role="button" routerLink="/sets/overview/{{ set.id }}">Back</a>
+  <br />
+  <a
+    role="button"
+    href="javascript:void(0)"
+    *ngIf="!hasStarted"
+    (click)="reverseCards = !reverseCards; hasStarted = true"
+    >Reverse cards</a
+  >
 </div>
 
-<div class="card-group" *ngIf="reverseCards && hasStarted">
+<div class="box-fill">
+  <div class="card-group" *ngIf="!reverseCards && hasStarted">
     <div class="top center-text">
-        {{ set.cards[currentCardIterator].front }}
+      {{ set.cards[currentCardIterator].front }}
     </div>
 
     <div class="bottom center-text" (click)="hideCard = !hideCard">
-        {{ hideCard ? "Click to reveal" : set.cards[currentCardIterator].back }}
+      {{ hideCard ? "Click to reveal" : set.cards[currentCardIterator].back }}
     </div>
-</div>
+  </div>
 
-<div class="card-group" *ngIf="!reverseCards && hasStarted">
+  <div class="card-group box-fill" *ngIf="reverseCards && hasStarted">
     <div class="top center-text">{{ set.cards[currentCardIterator].back }}</div>
 
     <div class="bottom center-text" (click)="hideCard = !hideCard">
-        {{ hideCard ? "Click to reveal" : set.cards[currentCardIterator].front
-        }}
+      {{ hideCard ? "Click to reveal" : set.cards[currentCardIterator].front }}
     </div>
-</div>
+  </div>
 
-<div
+  <div
     *ngIf="!hasStarted"
     (click)="hasStarted = !hasStarted"
-    class="center-text start-box"
->
-    <span class="center-text">Click to start</span>
+    class="center-text box-fill"
+  >
+    <span class="center-text pointer">Click to start</span>
+  </div>
 </div>
 
-<div class="center-buttons" *ngIf="hasStarted">
-    <a role="button" href="javascript:void(0)" (click)="newCard(-1)"
-        >Previous
-    </a>
-    <a role="button" href="javascript:void(0)" (click)="newCard(1)">Next</a>
+<div class="center-buttons bottom-nav-buttons" *ngIf="hasStarted">
+  <a
+    role="button"
+    href="javascript:void(0)"
+    (click)="newCard(-1)"
+    [class.hide]="this.currentCardIterator === 0"
+    >Previous
+  </a>
+  <a
+    role="button"
+    href="javascript:void(0)"
+    (click)="newCard(1)"
+    [class.hide]="this.currentCardIterator === this.set.cards.length - 1"
+    *ngIf="!(this.currentCardIterator === this.set.cards.length - 1)"
+    >Next</a
+  >
+
+  <a
+    role="button"
+    routerLink="/sets/overview/{{ set.id }}"
+    *ngIf="this.currentCardIterator === this.set.cards.length - 1"
+    >Complete</a
+  >
 </div>
