@@ -2,115 +2,9 @@ import { Set } from "../interfaces/sets.interface";
 
 export const cardSets: Set[] = [
   {
-    id: 9,
-    name: "Grammar - Beginner 1",
-    description: "",
-    cards: [
-      {
-        front: "안녕하세요",
-        back: "Hello",
-        extra:
-          "안녕 = well-being, peace, health. 하세요 = you do, do you?, please do.",
-      },
-      {
-        front: "감사합니다",
-        back: "Thank you.",
-        extra:
-          "감사 = appreciation, thankfulness, gratitude. 합니다 = I do, I am doing. ",
-      },
-      {
-        front: "네",
-        back: "Yes",
-        extra: "I agree. Affirmative. Yes? Uh huh. Yeah. ",
-      },
-      {
-        front: "아니요",
-        back: "No.",
-        extra: "I disagree. ",
-      },
-      {
-        front: "맞아요",
-        back: "You are right",
-        extra: 'Can be used after 네 to say "Yes, you are right".',
-      },
-      {
-        front: "안녕히 계세요",
-        back: "Goodbye (they are staying)",
-        extra: "Stay in peace",
-      },
-      {
-        front: "안녕히 가세요",
-        back: "Goodbye (they are going)",
-        extra: "Go in peace",
-      },
-      {
-        front: "죄송합니다",
-        back: "I apologize",
-        extra: "Chweh-song hamnida",
-      },
-      {
-        front: "저기요",
-        back: "Excuse me. (over there!) ",
-        extra: 'Politely, "hey you over there!"',
-      },
-      {
-        front: "잠시만요",
-        back: "Just a second",
-        extra: `"Excuse me" (passing through crowd bumping into people)`,
-      },
-    ],
-  },
-  {
-    id: 10,
-    name: "Grammar - Beginner 2",
-    description: "",
-    cards: [
-      {
-        front: "이거 (in 이거 뭐예요)",
-        back: "This (thing)",
-        extra: '"What is THIS?" Also 이거 물이에요 - "This is water"',
-      },
-      {
-        front: "뭐 in 뭐예요",
-        back: "What? As in what is it?",
-        extra: "",
-      },
-      {
-        front: "이에요 and 예요",
-        back: '"it is" or "is it"',
-        extra: "",
-      },
-      {
-        front: "이",
-        back: "This (near you)",
-        extra: "",
-      },
-      {
-        front: "저",
-        back: "That (over there, not nearby other person)",
-        extra: "",
-      },
-      {
-        front: "그",
-        back: "The / that (near the other person)",
-        extra: "",
-      },
-      {
-        front: "아니에요 ",
-        back: "To be not (polite, present tense).",
-        extra: "Can also be said in response to 'thank you'.",
-      },
-      {
-        front: "은/는",
-        back: "Marks the topic of the sentence, and puts emphasis on it.",
-        extra: "이 책은 = This book (topic of this sentence)",
-      },
-    ],
-  },
-  {
     id: 1,
     name: "Hangeul Level 1",
-    description: "",
+    description: "Review your basic vowels.",
     cards: [
       {
         front: "What sound does 으 make?",
@@ -173,7 +67,7 @@ export const cardSets: Set[] = [
   {
     id: 3,
     name: "Hangeul Level 2",
-    description: "",
+    description: "Review your introductory consonants.",
     cards: [
       {
         front: "What sound does ㄱ make?",
@@ -247,7 +141,7 @@ export const cardSets: Set[] = [
   {
     id: 5,
     name: "Hangeul Level 3",
-    description: "",
+    description: "Review ㅅ variations, and the ㅎ sound.",
     cards: [
       {
         front: "What sound does ㅅ make?",
@@ -284,7 +178,7 @@ export const cardSets: Set[] = [
   {
     id: 6,
     name: "Hangeul Level 4",
-    description: "",
+    description: "Review your diphthongs, or compound vowels.",
     cards: [
       {
         front: "What sound does ㅘ make? ",
@@ -337,7 +231,7 @@ export const cardSets: Set[] = [
   {
     id: 7,
     name: "Hangeul Level 5",
-    description: "",
+    description: 'Quickly review the "Y" sound.',
     cards: [
       {
         front: 'Execution of "Y" in Hangeul',
@@ -349,7 +243,7 @@ export const cardSets: Set[] = [
   {
     id: 8,
     name: "Hangeul Level 6",
-    description: "",
+    description: "Quick review of batchim and ending sounds.",
     cards: [
       {
         front: "What sound does ㅇ make at the end of a block?",
@@ -359,7 +253,114 @@ export const cardSets: Set[] = [
       {
         front: "How do you handle a consonant at the end of a word?",
         back: `Called "Batchim", a short stop.`,
-        extra: 'Most consonants are said normally at the end, but some are reduced to a simple form. These rules are called "batchim".',
+        extra:
+          'Most consonants are said normally at the end, but some are reduced to a simple form. These rules are called "batchim".',
+      },
+    ],
+  },
+  {
+    id: 9,
+    name: "Grammar - Beginner 1",
+    description: "Review your grammar introduction with basic words and phrases.",
+    cards: [
+      {
+        front: "안녕하세요",
+        back: "Hello",
+        extra:
+          "안녕 = well-being, peace, health. 하세요 = you do, do you?, please do.",
+      },
+      {
+        front: "감사합니다",
+        back: "Thank you.",
+        extra:
+          "감사 = appreciation, thankfulness, gratitude. 합니다 = I do, I am doing. ",
+      },
+      {
+        front: "네",
+        back: "Yes",
+        extra: "I agree. Affirmative. Yes? Uh huh. Yeah. ",
+      },
+      {
+        front: "아니요",
+        back: "No.",
+        extra: "I disagree. ",
+      },
+      {
+        front: "맞아요",
+        back: "You are right",
+        extra: 'Can be used after 네 to say "Yes, you are right".',
+      },
+      {
+        front: "안녕히 계세요",
+        back: "Goodbye (they are staying)",
+        extra: "Stay in peace",
+      },
+      {
+        front: "안녕히 가세요",
+        back: "Goodbye (they are going)",
+        extra: "Go in peace",
+      },
+      {
+        front: "죄송합니다",
+        back: "I apologize",
+        extra: "Chweh-song hamnida",
+      },
+      {
+        front: "저기요",
+        back: "Excuse me. (over there!) ",
+        extra: 'Politely, "hey you over there!"',
+      },
+      {
+        front: "잠시만요",
+        back: "Just a second",
+        extra: `"Excuse me" (passing through crowd bumping into people)`,
+      },
+    ],
+  },
+  {
+    id: 10,
+    name: "Grammar - Beginner 2",
+    description: 'Review "this", states of being, contextual locations, and more.',
+    cards: [
+      {
+        front: "이거 (in 이거 뭐예요)",
+        back: "This (thing)",
+        extra: '"What is THIS?" Also 이거 물이에요 - "This is water"',
+      },
+      {
+        front: "뭐 in 뭐예요",
+        back: "What? As in what is it?",
+        extra: "",
+      },
+      {
+        front: "이에요 and 예요",
+        back: '"it is" or "is it"',
+        extra: "",
+      },
+      {
+        front: "이",
+        back: "This (near you)",
+        extra: "",
+      },
+      {
+        front: "저",
+        back: "That (over there, not nearby other person)",
+        extra: "",
+      },
+      {
+        front: "그",
+        back: "The / that (near the other person)",
+        extra: "",
+      },
+      {
+        front: "아니에요 ",
+        back: "To be not (polite, present tense).",
+        extra: "Can also be said in response to 'thank you'.",
+      },
+      {
+        front: "은/는",
+        back: "Marks the topic of the sentence, and puts emphasis on it.",
+        extra: "이 책은 = This book (topic of this sentence)",
       },
     ],
   },
