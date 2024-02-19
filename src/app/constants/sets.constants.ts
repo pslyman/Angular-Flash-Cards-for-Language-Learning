@@ -113,32 +113,32 @@ export const cardSets: Set[] = [
     description: "",
     cards: [
       {
-        front: "What sound does 으 make?",
+        front: "으",
         back: '"eu"',
         extra: "Neutral (unhappy face) sound.",
       },
       {
-        front: "What sound does 오 make? ",
+        front: "오 ",
         back: '"o"',
         extra: `The "o" sound from "bold".`,
       },
       {
-        front: "What sound does 우 make? ",
+        front: "우 ",
         back: '"Ooh"',
         extra: "",
       },
       {
-        front: "What sound does 이 make?",
+        front: "이",
         back: '"ee"',
         extra: "",
       },
       {
-        front: "What sound does 어 make?",
+        front: "어",
         back: '"uh", or "eo"',
         extra: "",
       },
       {
-        front: "What sound does 아 make?",
+        front: "아",
         back: '"ah"',
         extra: "",
       },
@@ -176,63 +176,63 @@ export const cardSets: Set[] = [
     description: "",
     cards: [
       {
-        front: "What sound does ㄱ make?",
+        front: "ㄱ",
         back: '"G" or "K", a "clicky" G. ',
         extra:
           "Push your tongue forward slightly more forward than an English G would normally require.",
       },
       {
-        front: "What sound does ㅋ make?",
+        front: "ㅋ",
         back: 'ㅋ = "K".',
         extra: "",
       },
       {
-        front: "What sound does ㄴ make? ",
+        front: "ㄴ ",
         back: '"N" sound',
         extra: 'Tongue bottom of upper teeth. It\'s a "soft N".',
       },
       {
-        front: "What sound does ㄷ make?",
+        front: "ㄷ",
         back: "ㄷ = D/Th",
         extra: "Keep tongue on top lower teeth",
       },
       {
-        front: "What sound does ㄹ make?",
+        front: "ㄹ",
         back: 'A rolling "R". Can resemble the "L" sound in the middle of a word. ',
         extra: "",
       },
       {
-        front: "What sound does ㅁ make?",
+        front: "ㅁ",
         back: '"M"',
         extra: "",
       },
       {
-        front: "What sound does ㅂ make?",
+        front: "ㅂ",
         back: 'A soft "B".',
         extra: "",
       },
       {
-        front: "What sound does ㄲ make?",
+        front: "ㄲ",
         back: '"G".',
         extra: "",
       },
       {
-        front: "What sound does ㄸ make?",
+        front: "ㄸ",
         back: '"D". ',
         extra: "",
       },
       {
-        front: "What sound does ㅌ make?",
+        front: "ㅌ",
         back: '"T".',
         extra: "",
       },
       {
-        front: "What sound does ㅍ make?",
+        front: "ㅍ",
         back: '"P".',
         extra: "",
       },
       {
-        front: "What sound does ㅃ make?",
+        front: "ㅃ",
         back: 'ㅃ = "B".',
         extra: "",
       },
@@ -250,12 +250,12 @@ export const cardSets: Set[] = [
     description: "",
     cards: [
       {
-        front: "What sound does ㅅ make?",
+        front: "ㅅ",
         back: 'A soft "s"',
         extra: "",
       },
       {
-        front: "What sound does ㅈ make? ",
+        front: "ㅈ ",
         back: 'Between "ch" and "j", light with the tongue.',
         extra: "",
       },
@@ -265,17 +265,17 @@ export const cardSets: Set[] = [
         extra: "오 = eo. 호 = heo.",
       },
       {
-        front: "What sound does ㅊ make? ",
+        front: "ㅊ ",
         back: 'ㅊ= added friction and air to ㅈ (between "j" and "ch"). ',
         extra: "",
       },
       {
-        front: "What sound does ㅆ make? ",
+        front: "ㅆ ",
         back: 'ㅆ = "S"',
         extra: "Less air escape",
       },
       {
-        front: "What sound does ㅉ make? ",
+        front: "ㅉ ",
         back: 'Added friction to (ㅈ) like "t". ',
         extra: "",
       },
@@ -287,12 +287,12 @@ export const cardSets: Set[] = [
     description: "",
     cards: [
       {
-        front: "What sound does ㅘ make? ",
+        front: "ㅘ ",
         back: '"Wah". ',
         extra: "",
       },
       {
-        front: "What sound does ㅝ make?",
+        front: "ㅝ",
         back: '"Wuh"',
         extra: "",
       },
@@ -307,28 +307,28 @@ export const cardSets: Set[] = [
         extra: "In most cases, functionally identical",
       },
       {
-        front: "What sound does ㅞ make?",
+        front: "ㅞ",
         back: '"Weh", but with a hint of "ai"',
         extra: "",
       },
       {
-        front: "What sound does ㅚ make?",
+        front: "ㅚ",
         back: '"Weh" with an "ai" sound',
         extra:
           'This one is less intuitive because there\'s no "ee" or "oh" sounds',
       },
       {
-        front: "What sound does ㅙ make?",
+        front: "ㅙ",
         back: '"Weh", but with a hint of "ai"',
         extra: "",
       },
       {
-        front: "What sound does ㅟ make?",
+        front: "ㅟ",
         back: '"We"',
         extra: "",
       },
       {
-        front: "What sound does ㅢ make?",
+        front: "ㅢ",
         back: "eu-ee",
         extra: "This is phonetic, say as seen. ",
       },
@@ -352,7 +352,7 @@ export const cardSets: Set[] = [
     description: "",
     cards: [
       {
-        front: "What sound does ㅇ make at the end of a block?",
+        front: "ㅇ make at the end of a block?",
         back: 'Ending "ng" sound, like sting and ring. ',
         extra: "",
       },
