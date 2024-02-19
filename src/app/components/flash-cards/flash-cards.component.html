@@ -25,7 +25,7 @@
           set.cards[currentCardIterator].back
         }}</span>
       </span>
-      <p *ngIf="!hideCard" class="extras-text card-text" @subtleSlideFadeIn>
+      <p *ngIf="!hideCard && set.cards[currentCardIterator].extra.length > 0" class="extras-text card-text" @subtleSlideFadeIn>
         {{ set.cards[currentCardIterator].extra }}
       </p>
     </div>
@@ -44,7 +44,7 @@
         }}</span>
       </span>
 
-      <p *ngIf="!hideCard" class="extras-text card-text" @subtleSlideFadeIn>
+      <p *ngIf="!hideCard && set.cards[currentCardIterator].extra.length > 0" class="extras-text card-text" @subtleSlideFadeIn>
         {{ set.cards[currentCardIterator].extra }}
       </p>
     </div>
