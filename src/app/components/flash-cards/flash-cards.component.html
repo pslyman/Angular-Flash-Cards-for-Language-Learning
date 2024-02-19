@@ -13,11 +13,16 @@
 <div class="box-fill">
   <div class="card-group" *ngIf="!reverseCards && hasStarted">
     <div class="top center-text">
-      {{ set.cards[currentCardIterator].front }}
+      <span class="card-text">{{ set.cards[currentCardIterator].front }}</span>
     </div>
 
     <div class="bottom center-text" (click)="hideCard = !hideCard">
-      {{ hideCard ? "Click to reveal" : set.cards[currentCardIterator].back }}
+      <span class="card-text">{{
+        hideCard ? "Click to reveal" : set.cards[currentCardIterator].back
+      }}</span>
+      <p *ngIf="!hideCard" class="extras-text card-text">
+        {{ set.cards[currentCardIterator].extra }}
+      </p>
     </div>
   </div>
 
@@ -25,7 +30,13 @@
     <div class="top center-text">{{ set.cards[currentCardIterator].back }}</div>
 
     <div class="bottom center-text" (click)="hideCard = !hideCard">
-      {{ hideCard ? "Click to reveal" : set.cards[currentCardIterator].front }}
+      <span class="card-text">{{
+        hideCard ? "Click to reveal" : set.cards[currentCardIterator].front
+      }}</span>
+
+      <p *ngIf="!hideCard" class="extras-text card-text">
+        {{ set.cards[currentCardIterator].extra }}
+      </p>
     </div>
   </div>
 
