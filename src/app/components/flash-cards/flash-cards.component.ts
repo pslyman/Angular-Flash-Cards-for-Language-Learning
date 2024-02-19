@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { Card, Set } from '../../interfaces/sets.interface'
 import { cardSets } from '../../constants/sets.constants';
 import { CommonModule } from '@angular/common';
@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-flash-cards',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './flash-cards.component.html',
   styleUrl: './flash-cards.component.scss'
 })
@@ -25,6 +25,7 @@ export class FlashCardsComponent implements OnInit {
   currentCardIterator = 0;
   hideCard = true;
   reverseCards = false;
+  hasStarted = false;
 
   ngOnInit(): void {
     this.setId = this.route.snapshot.paramMap.get("setId") ?? "";

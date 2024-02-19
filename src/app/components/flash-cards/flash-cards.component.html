@@ -1,22 +1,45 @@
-<a role="button" href="javascript:void(0)" (click)="reverseCards = !reverseCards;">Reverse cards</a>
-
-<div class="card-group" *ngIf="reverseCards">
-    <div class="top">{{ set.cards[currentCardIterator].front }}</div>
-
-    <div class="bottom" (click)="hideCard = !hideCard">{{ hideCard ? "Click to reveal" :
-        set.cards[currentCardIterator].back
-        }}</div>
+<div class="center-buttons">
+    <a role="button" routerLink="/sets/overview/{{ set.id }}">Back</a>
+    <br />
+    <a
+        role="button"
+        href="javascript:void(0)"
+        *ngIf="!hasStarted"
+        (click)="reverseCards = !reverseCards;"
+        >Reverse cards</a
+    >
 </div>
 
-<div class="card-group" *ngIf="!reverseCards">
+<div class="card-group" *ngIf="reverseCards && hasStarted">
+    <div class="top center-text">
+        {{ set.cards[currentCardIterator].front }}
+    </div>
 
-
-    <div class="top" >{{ set.cards[currentCardIterator].back }}</div>
-
-    <div class="bottom" (click)="hideCard = !hideCard">{{ hideCard ? "Click to reveal" :
-        set.cards[currentCardIterator].front
-        }}</div>
+    <div class="bottom center-text" (click)="hideCard = !hideCard">
+        {{ hideCard ? "Click to reveal" : set.cards[currentCardIterator].back }}
+    </div>
 </div>
 
-<a role="button" href="javascript:void(0)" (click)="newCard(-1)">Previous </a>
-<a role="button" href="javascript:void(0)" (click)="newCard(1)">Next</a>
+<div class="card-group" *ngIf="!reverseCards && hasStarted">
+    <div class="top center-text">{{ set.cards[currentCardIterator].back }}</div>
+
+    <div class="bottom center-text" (click)="hideCard = !hideCard">
+        {{ hideCard ? "Click to reveal" : set.cards[currentCardIterator].front
+        }}
+    </div>
+</div>
+
+<div
+    *ngIf="!hasStarted"
+    (click)="hasStarted = !hasStarted"
+    class="center-text start-box"
+>
+    <span class="center-text">Click to start</span>
+</div>
+
+<div class="center-buttons" *ngIf="hasStarted">
+    <a role="button" href="javascript:void(0)" (click)="newCard(-1)"
+        >Previous
+    </a>
+    <a role="button" href="javascript:void(0)" (click)="newCard(1)">Next</a>
+</div>
