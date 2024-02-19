@@ -21,7 +21,7 @@ export const cardSets: Set[] = [
       {
         front: "네",
         back: "Yes",
-        extra: "I agree. Affirmative. Yes? Uh huh. Yeah. ",
+        extra: "I agree. Affirmative. Yes? Uh huh. Yeah.",
       },
       {
         front: "아니요",
@@ -68,7 +68,7 @@ export const cardSets: Set[] = [
       {
         front: "이거 (in 이거 뭐예요)",
         back: "This (thing)",
-        extra: '"What is THIS?" Also 이거 물이에요 - "This is water"',
+        extra: 'What is "THIS?" Also 이거 물이에요 - "This is water"',
       },
       {
         front: "뭐 in 뭐예요",
@@ -78,7 +78,7 @@ export const cardSets: Set[] = [
       {
         front: "이에요 and 예요",
         back: '"it is" or "is it"',
-        extra: "",
+        extra: "The state of being.",
       },
       {
         front: "이",
@@ -119,7 +119,7 @@ export const cardSets: Set[] = [
       },
       {
         front: "오 ",
-        back: '"o"',
+        back: '"oh"',
         extra: `The "o" sound from "bold".`,
       },
       {
@@ -183,7 +183,7 @@ export const cardSets: Set[] = [
       },
       {
         front: "ㅋ",
-        back: 'ㅋ = "K".',
+        back: '"K".',
         extra: "",
       },
       {
@@ -193,7 +193,7 @@ export const cardSets: Set[] = [
       },
       {
         front: "ㄷ",
-        back: "ㄷ = D/Th",
+        back: "D/Th",
         extra: "Keep tongue on top lower teeth",
       },
       {
@@ -233,7 +233,7 @@ export const cardSets: Set[] = [
       },
       {
         front: "ㅃ",
-        back: 'ㅃ = "B".',
+        back: '"B".',
         extra: "",
       },
       {
@@ -271,7 +271,7 @@ export const cardSets: Set[] = [
       },
       {
         front: "ㅆ ",
-        back: 'ㅆ = "S"',
+        back: '"S"',
         extra: "Less air escape",
       },
       {
@@ -297,12 +297,12 @@ export const cardSets: Set[] = [
         extra: "",
       },
       {
-        front: "What sound doesㅐmake?",
+        front: "ㅐ",
         back: 'Ai without a mouth change, like "eh"',
         extra: "",
       },
       {
-        front: "What sound doesㅔmake?",
+        front: "ㅔ",
         back: 'Ai, or "eh" much like ㅐ(which is more open). ',
         extra: "In most cases, functionally identical",
       },
@@ -352,7 +352,7 @@ export const cardSets: Set[] = [
     description: "",
     cards: [
       {
-        front: "ㅇ make at the end of a block?",
+        front: "ㅇ ending in a syllable block.",
         back: 'Ending "ng" sound, like sting and ring. ',
         extra: "",
       },
