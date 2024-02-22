@@ -9,7 +9,7 @@ export const cardSets: Set[] = [
       {
         front: "으",
         back: '"eu"',
-        extra: "Neutral (unhappy face) sound.",
+        extra: "Neutral (unhappy face) sound. ㅡ represents the ground.",
       },
       {
         front: "오 ",
@@ -24,7 +24,7 @@ export const cardSets: Set[] = [
       {
         front: "이",
         back: '"ee"',
-        extra: "",
+        extra: "ㅣ represents human beings.",
       },
       {
         front: "어",
@@ -43,18 +43,8 @@ export const cardSets: Set[] = [
           "Makes no sound at the beginning of a syllable. Turns a vowel into a full syllable block by forming a pair. ",
       },
       {
-        front: "What does ㅣ represent?",
-        back: "Symbol representing human beings",
-        extra: "",
-      },
-      {
-        front: "What does . represent?",
-        back: "Smybol representing sky",
-        extra: "",
-      },
-      {
-        front: "What does ㅡ represent?",
-        back: "Symbol representing ground",
+        front: ". (representation)",
+        back: "This symbol represents the sky.",
         extra: "",
       },
       {
@@ -230,20 +220,9 @@ export const cardSets: Set[] = [
   },
   {
     id: 7,
-    name: "Hangeul Level 5",
-    description: 'Quickly review the "Y" sound.',
-    cards: [
-      {
-        front: 'Execution of "Y" in Hangeul',
-        back: 'Adding an extra dot or line on a vowel will prepend a new sound of "Y".',
-        extra: `You can take the following vowels:ㅏ,ㅓ,ㅗ,ㅜ,ㅐ,ㅔ. And add a line to them:ㅑ,ㅕ,ㅛ,ㅠ,ㅒ,ㅖ. Which adds a "y" sound to the beginning. ㅏ(Ah) would become ㅑ(Yah).`,
-      },
-    ],
-  },
-  {
-    id: 8,
     name: "Hangeul Level 6",
-    description: "Quick review of batchim and ending sounds.",
+    description:
+      'Quick review of batchim and ending sounds. "Y" is covered briefly.',
     cards: [
       {
         front: "ㅇ ending in a syllable block.",
@@ -256,10 +235,15 @@ export const cardSets: Set[] = [
         extra:
           'Most consonants are said normally at the end, but some are reduced to a simple form. These rules are called "batchim".',
       },
+      {
+        front: 'Execution of "Y" in Hangeul',
+        back: 'Adding an extra dot or line on a vowel will prepend a new sound of "Y".',
+        extra: `You can take the following vowels:ㅏ,ㅓ,ㅗ,ㅜ,ㅐ,ㅔ. And add a line to them:ㅑ,ㅕ,ㅛ,ㅠ,ㅒ,ㅖ. Which adds a "y" sound to the beginning. ㅏ(Ah) would become ㅑ(Yah).`,
+      },
     ],
   },
   {
-    id: 9,
+    id: 8,
     name: "Grammar - Beginner 1",
     description:
       "Review your grammar introduction with basic words and phrases.",
@@ -319,7 +303,7 @@ export const cardSets: Set[] = [
     ],
   },
   {
-    id: 10,
+    id: 9,
     name: "Grammar - Beginner 2",
     description:
       'Review "this", states of being, contextual locations, and more.',
@@ -359,10 +343,45 @@ export const cardSets: Set[] = [
         back: "To be not (polite, present tense).",
         extra: "Can also be said in response to 'thank you'.",
       },
+    ],
+  },
+  {
+    id: 10,
+    name: "Grammar - Beginner 3",
+    description: "Review participles and word markers, and more words",
+    cards: [
       {
         front: "은/는",
-        back: "Marks the topic of the sentence, and puts emphasis on it.",
-        extra: "이 책은 = This book (topic of this sentence)",
+        back: 'Marks the topic of the sentence, and puts emphasis on it. Topic: about something, "as for" something, or unlike other things or different from other things (comparison). As if to say "this is about what we are speaking".',
+        extra:
+          '이 책은 = This book (topic of this sentence). "This book <unlike other books>"',
+      },
+      {
+        front: "이/가",
+        back: "Marks the subject of the sentence.",
+        extra:
+          '이 책이 = This book (subject of this sentence). "This book <other books notwithstanding>"',
+      },
+      {
+        front: "이 책은 vs 이 책이 vs just 이 책",
+        back: "이 책은 = This book (topic of this sentence), 이 책이 = This book (subject of this sentence), 이 책 = This book (no emphasis on topic or subject).",
+        extra: `If you say "This book is good <topic marker>", you are saying it's better than all other books. If you say "This book is good <subject marker>", you are saying it's good, not compared to anything else or other books notwithstanding.`,
+        alwaysFrontFirst: true,
+      },
+      {
+        front: "있어요",
+        back: "Does exist, is there, is in possession of.",
+        extra: `The noun goes in front. 물 있어요 = Water + there is`,
+      },
+      {
+        front: "없어요",
+        back: "Does not exist, is not there, is not in possession of.",
+        extra: "The noun goes in front. 물 없어요 = Water + there is not",
+      },
+      {
+        front: "주세요",
+        back: "Please give me - <thing>",
+        extra: "Informal and formal, works in all contexts.",
       },
     ],
   },

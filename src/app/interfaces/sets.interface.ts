@@ -9,4 +9,5 @@ export interface Card {
   front: string;
   back: string;
   extra: string;
+  alwaysFrontFirst?: boolean;
 }

@@ -19,13 +19,28 @@
     </div>
 
     <div class="bottom center-text" @fadeIn (click)="hideCard = !hideCard">
-      <span class="card-text" @fadeIn>
+      <p
+        class="card-text"
+        @fadeIn
+        [class.medium-font]="
+          set.cards[currentCardIterator].back.length > 150 ||
+          set.cards[currentCardIterator].extra.length > 150
+        "
+      >
         <span *ngIf="hideCard" @fadeIn>(Reveal back)</span>
-        <span *ngIf="!hideCard" @fadeIn>{{
+        <span *ngIf="!hideCard" @fadeIn class="actual-text">{{
           set.cards[currentCardIterator].back
         }}</span>
-      </span>
-      <p *ngIf="!hideCard && set.cards[currentCardIterator].extra.length > 0" class="extras-text card-text" @subtleSlideFadeIn>
+      </p>
+      <p
+        *ngIf="!hideCard && set.cards[currentCardIterator].extra.length > 0"
+        class="extras-text card-text"
+        @subtleSlideFadeIn
+        [class.small-font]="
+          set.cards[currentCardIterator].back.length > 150 ||
+          set.cards[currentCardIterator].extra.length > 150
+        "
+      >
         {{ set.cards[currentCardIterator].extra }}
       </p>
     </div>
@@ -33,18 +48,43 @@
 
   <div class="card-group box-fill" *ngIf="reverseCards && hasStarted">
     <div class="top center-text" @fadeIn>
-      {{ set.cards[currentCardIterator].back }}
+      {{
+        set.cards[currentCardIterator].alwaysFrontFirst
+          ? set.cards[currentCardIterator].front
+          : set.cards[currentCardIterator].back
+      }}
     </div>
 
     <div class="bottom center-text" @fadeIn (click)="hideCard = !hideCard">
-      <span class="card-text" @fadeIn>
+      <p
+        class="card-text"
+        @fadeIn
+        [class.medium-font]="
+          set.cards[currentCardIterator].extra.length > 150 ||
+          (set.cards[currentCardIterator].alwaysFrontFirst
+            ? set.cards[currentCardIterator].back.length > 150
+            : set.cards[currentCardIterator].front.length > 150)
+        "
+      >
         <span *ngIf="hideCard" @fadeIn>(Reveal front)</span>
-        <span *ngIf="!hideCard" @fadeIn>{{
-          set.cards[currentCardIterator].front
+        <span class="actual-text" *ngIf="!hideCard" @fadeIn>{{
+          set.cards[currentCardIterator].alwaysFrontFirst
+            ? set.cards[currentCardIterator].back
+            : set.cards[currentCardIterator].front
         }}</span>
-      </span>
+      </p>
 
-      <p *ngIf="!hideCard && set.cards[currentCardIterator].extra.length > 0" class="extras-text card-text" @subtleSlideFadeIn>
+      <p
+        *ngIf="!hideCard && set.cards[currentCardIterator].extra.length > 0"
+        class="extras-text card-text"
+        @subtleSlideFadeIn
+        [class.small-font]="
+          set.cards[currentCardIterator].extra.length > 150 ||
+          (set.cards[currentCardIterator].alwaysFrontFirst
+            ? set.cards[currentCardIterator].back.length > 150
+            : set.cards[currentCardIterator].front.length > 150)
+        "
+      >
         {{ set.cards[currentCardIterator].extra }}
       </p>
     </div>

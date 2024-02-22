@@ -1,107 +1,122 @@
 .card-group {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .top {
+    height: 45%;
     display: flex;
+    align-items: center;
+    width: 50%;
+    border: #e1e1e1 solid 1px;
+  }
+
+  .bottom {
+    cursor: pointer;
+    height: 45%;
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    height: 100%;
-
-    .top {
-        height: 45%;
-        display: flex;
-        align-items: center;
-        width: 50%;
-        border: #e1e1e1 solid 1px;
-    }
-
-    .bottom {
-        cursor: pointer;
-        height: 45%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 50%;
-        border: #e1e1e1 solid 1px;
-    }
+    width: 50%;
+    border: #e1e1e1 solid 1px;
+  }
 }
 
 .center-text {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-self: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  padding: 5px;
 }
 
 .card-text {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 30px;
 }
 
 .box-fill {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 0;
-    width: calc(100vw - 20px);
-    height: calc(100vh - 200px);
-    min-height: 400px;
-    margin: 0;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  width: calc(100vw - 20px);
+  height: calc(100vh - 200px);
+  min-height: 400px;
+  margin: 0;
+  padding: 10px;
 }
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .bottom-nav-buttons {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 
-    width: calc(50% - 20px);
-    padding-left: 10px;
-    padding-right: 10px;
+  width: calc(50% - 20px);
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .hide {
-    opacity: 0;
-    pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .finish-button {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
 }
 
 .extras-text {
-    opacity: 70%;
-    font-size: 18px;
+  opacity: 70%;
+  font-size: 18px;
+}
+
+.medium-font {
+  font-size: 16px;
+  line-height: 20px;
+  .actual-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.small-font {
+  font-size: 14px;
+  line-height: 18px;
 }
 
 @media (max-width: 1024px) {
-    .bottom-nav-buttons {
-        width: calc(60% - 20px);
-    }
-    .top,
-    .bottom {
-        width: 60% !important;
-    }
+  .bottom-nav-buttons {
+    width: calc(60% - 20px);
+  }
+  .top,
+  .bottom {
+    width: 60% !important;
+  }
 }
 
 @media (max-width: 768px) {
-    .bottom-nav-buttons {
-        width: calc(90% - 20px);
-    }
-    .top,
-    .bottom {
-        width: 90% !important;
-    }
+  .bottom-nav-buttons {
+    width: calc(90% - 20px);
+  }
+  .top,
+  .bottom {
+    width: 90% !important;
+  }
 }
 
 @media (max-width: 480px) {
-    .bottom-nav-buttons {
-        width: calc(100% - 30px);
-    }
-    .top,
-    .bottom {
-        width: calc(100% - 20px) !important;
-    }
+  .bottom-nav-buttons {
+    width: calc(100% - 30px);
+  }
+  .top,
+  .bottom {
+    width: calc(100% - 20px) !important;
+  }
 }
