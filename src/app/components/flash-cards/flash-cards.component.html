@@ -1,5 +1,5 @@
 <div @fadeIn>
-  <div class="center-buttons">
+  <div class="center-buttons align">
     <a role="button" routerLink="/sets/overview/{{ set.id }}">Back</a>
     <br />
     <a
@@ -9,6 +9,9 @@
       (click)="reverseCards = !reverseCards; hasStarted = true"
       >Reverse cards</a
     >
+    <p *ngIf="hasStarted">
+      {{ this.currentCardIterator + 1 }} / {{ set.cards.length }}
+    </p>
   </div>
 </div>
 

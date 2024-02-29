@@ -1,6 +1,8 @@
 import { CommonModule } from "@angular/common";
 import { Component, OnInit, inject } from "@angular/core";
 import { NavigationEnd, Router, RouterOutlet } from "@angular/router";
+import { Set } from "./interfaces/sets.interface";
+import { cardSets } from "./constants/sets.constants";
 
 @Component({
   selector: "app-root",
@@ -15,6 +17,7 @@ export class AppComponent implements OnInit {
   title = "Angular-Flash-Cards-for-Language-Learning";
   showButton = true;
   lightTheme = localStorage.getItem("theme") === "light";
+  cardSets = cardSets;
 
   ngOnInit() {
     this.router.events.subscribe((event) => {
@@ -23,6 +26,23 @@ export class AppComponent implements OnInit {
       }
     });
     this.toggleTheme(true);
+
+    const reviewAllObject: Set = {
+      id: 1000,
+      name: "Review All",
+      description: "Review every set all at once",
+      cards: [],
+    };
+
+    this.cardSets.forEach((set) => {
+      set.cards.forEach((card) => {
+        if (card) {
+          reviewAllObject.cards.push(card);
+        }
+      });
+    });
+
+    this.cardSets.push(reviewAllObject);
   }
 
   toggleTheme(firstTime = false) {

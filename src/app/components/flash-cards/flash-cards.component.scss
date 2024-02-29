@@ -22,6 +22,10 @@
   }
 }
 
+.align {
+  align-items: center;
+}
+
 .center-text {
   display: flex;
   justify-content: center;
@@ -55,7 +59,7 @@
 .bottom-nav-buttons {
   position: absolute;
   bottom: 0;
-
+  left: calc(50% / 2);
   width: calc(50% - 20px);
   padding-left: 10px;
   padding-right: 10px;
@@ -94,6 +98,7 @@
 @media (max-width: 1024px) {
   .bottom-nav-buttons {
     width: calc(60% - 20px);
+    left: 20%;
   }
   .top,
   .bottom {
@@ -104,6 +109,7 @@
 @media (max-width: 768px) {
   .bottom-nav-buttons {
     width: calc(90% - 20px);
+    left: 5%;
   }
   .top,
   .bottom {
@@ -114,6 +120,7 @@
 @media (max-width: 480px) {
   .bottom-nav-buttons {
     width: calc(100% - 30px);
+    left: 0;
   }
   .top,
   .bottom {
