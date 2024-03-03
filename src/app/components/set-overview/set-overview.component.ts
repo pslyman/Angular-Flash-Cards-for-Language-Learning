@@ -20,6 +20,7 @@ export class SetOverviewComponent {
   setId = '';
   set: Set = {
     id: 0,
+    groupId: 0,
     name: '',
     description: '',
     cards: []

@@ -1,8 +1,14 @@
-import { Set } from "../interfaces/sets.interface";
+import { NamesOfGroupIds, Set } from "../interfaces/sets.interface";
+
+export const namesOfGroupIds: NamesOfGroupIds = {
+  1: "Hangeul",
+  2: "Grammar - Beginner Level"
+};
 
 export const cardSets: Set[] = [
   {
     id: 1,
+    groupId: 1,
     name: "Hangeul Level 1",
     description: "Review your basic vowels.",
     cards: [
@@ -56,6 +62,7 @@ export const cardSets: Set[] = [
   },
   {
     id: 3,
+    groupId: 1,
     name: "Hangeul Level 2",
     description: "Review your introductory consonants.",
     cards: [
@@ -130,6 +137,7 @@ export const cardSets: Set[] = [
   },
   {
     id: 5,
+    groupId: 1,
     name: "Hangeul Level 3",
     description: "Review ㅅ variations, and the ㅎ sound.",
     cards: [
@@ -167,6 +175,7 @@ export const cardSets: Set[] = [
   },
   {
     id: 6,
+    groupId: 1,
     name: "Hangeul Level 4",
     description: "Review your diphthongs, or compound vowels.",
     cards: [
@@ -220,6 +229,7 @@ export const cardSets: Set[] = [
   },
   {
     id: 7,
+    groupId: 1,
     name: "Hangeul Level 6",
     description:
       'Quick review of batchim and ending sounds. "Y" is covered briefly.',
@@ -244,6 +254,7 @@ export const cardSets: Set[] = [
   },
   {
     id: 8,
+    groupId: 2,
     name: "Grammar - Beginner 1",
     description:
       "Review your grammar introduction with basic words and phrases.",
@@ -304,6 +315,7 @@ export const cardSets: Set[] = [
   },
   {
     id: 9,
+    groupId: 2,
     name: "Grammar - Beginner 2",
     description:
       'Review "this", states of being, contextual locations, and more.',
@@ -347,6 +359,7 @@ export const cardSets: Set[] = [
   },
   {
     id: 10,
+    groupId: 2,
     name: "Grammar - Beginner 3",
     description: "Review participles and word markers, and more words",
     cards: [
@@ -382,6 +395,27 @@ export const cardSets: Set[] = [
         front: "주세요",
         back: "<thing> - please give me",
         extra: "Informal and formal, works in all contexts.",
+      },
+      { front: "맛", back: "Taste", extra: `"Mat"` },
+      {
+        front: "맛있어요",
+        back: "It is tasty / It is delicious.",
+        extra: `Literally "It has taste"`,
+      },
+      {
+        front: "맛없어요",
+        back: "It is not tasty. / It is not delicious. / It tastes awful.",
+        extra: `Literally "It does not have taste"`,
+      },
+      {
+        front: "잘 먹겠습니다",
+        back: `"I am going to eat well” or “I will eat well."`,
+        extra: "",
+      },
+      {
+        front: "잘 먹었습니다",
+        back: "I have eaten well.",
+        extra: `This is a common way of saying "Thank you for the food"`,
       },
     ],
   },

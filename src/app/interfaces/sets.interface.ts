@@ -3,6 +3,7 @@ export interface Set {
   name: string;
   description: string;
   cards: Card[];
+  groupId: number;
 }
 
 export interface Card {
@@ -10,4 +11,8 @@ export interface Card {
   back: string;
   extra: string;
   alwaysFrontFirst?: boolean;
+}
+
+export interface NamesOfGroupIds {
+  [key: number]: string;
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import { cardSets } from "../../constants/sets.constants";
@@ -16,7 +16,5 @@ import {
   animations: [staggerAnimation, fadeInAnimation],
 })
 export class HomeComponent {
-  cardSets = cardSets.sort(function (a, b) {
-    return a.id - b.id || a.name.localeCompare(b.name);
-  });
+  cardSets = cardSets;
 }
