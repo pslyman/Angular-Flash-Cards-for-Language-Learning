@@ -2,7 +2,7 @@ import { NamesOfGroupIds, Set } from "../interfaces/sets.interface";
 
 export const namesOfGroupIds: NamesOfGroupIds = {
   1: "Hangeul",
-  2: "Grammar - Beginner Level"
+  2: "Grammar - Beginner",
 };
 
 export const cardSets: Set[] = [
@@ -61,7 +61,7 @@ export const cardSets: Set[] = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     groupId: 1,
     name: "Hangeul Level 2",
     description: "Review your introductory consonants.",
@@ -136,7 +136,7 @@ export const cardSets: Set[] = [
     ],
   },
   {
-    id: 5,
+    id: 3,
     groupId: 1,
     name: "Hangeul Level 3",
     description: "Review ㅅ variations, and the ㅎ sound.",
@@ -174,7 +174,7 @@ export const cardSets: Set[] = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     groupId: 1,
     name: "Hangeul Level 4",
     description: "Review your diphthongs, or compound vowels.",
@@ -228,9 +228,9 @@ export const cardSets: Set[] = [
     ],
   },
   {
-    id: 7,
+    id: 5,
     groupId: 1,
-    name: "Hangeul Level 6",
+    name: "Hangeul Level 5",
     description:
       'Quick review of batchim and ending sounds. "Y" is covered briefly.',
     cards: [
@@ -253,7 +253,7 @@ export const cardSets: Set[] = [
     ],
   },
   {
-    id: 8,
+    id: 6,
     groupId: 1,
     name: "Hangeul Level 7 (Batchim)",
     description:
@@ -297,7 +297,7 @@ export const cardSets: Set[] = [
     ],
   },
   {
-    id: 9,
+    id: 8,
     groupId: 2,
     name: "Grammar - Beginner 1",
     description:
@@ -358,7 +358,7 @@ export const cardSets: Set[] = [
     ],
   },
   {
-    id: 10,
+    id: 9,
     groupId: 2,
     name: "Grammar - Beginner 2",
     description:
@@ -402,7 +402,7 @@ export const cardSets: Set[] = [
     ],
   },
   {
-    id: 11,
+    id: 10,
     groupId: 2,
     name: "Grammar - Beginner 3",
     description: "Review participles and word markers, and more words",

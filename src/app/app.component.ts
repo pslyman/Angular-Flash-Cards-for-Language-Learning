@@ -53,7 +53,7 @@ export class AppComponent implements OnInit {
       const tempCardSetObject: CardSet = {
         id: maxId.id++,
         groupId: collectiveGroupId,
-        name: `${namesOfGroupIds[collectiveGroupId]}: Review Grouping`,
+        name: `${namesOfGroupIds[collectiveGroupId]}: Review`,
         description: `Review entire grouping for ${namesOfGroupIds[collectiveGroupId]}`,
         cards: [],
       };
