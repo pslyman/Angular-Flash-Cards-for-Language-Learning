@@ -254,6 +254,50 @@ export const cardSets: Set[] = [
   },
   {
     id: 8,
+    groupId: 1,
+    name: "Hangeul Level 7 (Batchim)",
+    description:
+      'Review of batchim and ending sounds - in depth',
+    cards: [
+      {
+        front: "Sound as final consonants: ㄱ, ㅋ, and ㄲ",
+        back: 'Each has ending sound of ㄱ',
+        extra: "",
+      },
+      {
+        front: "Sound as final consonant: ㄴ",
+        back: 'Has ending sound of ㄴ',
+        extra: "",
+      },
+      {
+        front: "Sound as final consonants: ㄷ, ㅌ, ㅅ, ㅆ, ㅈ, ㅊ, and ㅎ",
+        back: 'Each has ending sound of ㄷ',
+        extra: "",
+      },
+      {
+        front: "Sound as final consonant: ㄹ",
+        back: 'Has ending sound of ㄹ',
+        extra: "",
+      },
+      {
+        front: "Sound as final consonant: ㅁ",
+        back: 'Has ending sound of ㅁ',
+        extra: "",
+      },
+      {
+        front: "Sound as final consonants: ㅂ, and ㅍ",
+        back: 'Each has ending sound of ㅂ',
+        extra: "",
+      },
+      {
+        front: "Sound as final consonant: ㅇ",
+        back: 'Has ending sound of ㅇ',
+        extra: "",
+      },
+    ],
+  },
+  {
+    id: 9,
     groupId: 2,
     name: "Grammar - Beginner 1",
     description:
@@ -314,7 +358,7 @@ export const cardSets: Set[] = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     groupId: 2,
     name: "Grammar - Beginner 2",
     description:
@@ -358,7 +402,7 @@ export const cardSets: Set[] = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     groupId: 2,
     name: "Grammar - Beginner 3",
     description: "Review participles and word markers, and more words",
