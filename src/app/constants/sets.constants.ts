@@ -463,4 +463,68 @@ export const cardSets: Set[] = [
       },
     ],
   },
+  {
+    id: 11,
+    groupId: 2,
+    name: "Grammar - Beginner 4",
+    description: "Review participles and word markers, and more words",
+    cards: [
+      {
+        front: "고 싶어요",
+        back: 'I want to <verb>',
+        extra: '',
+      },
+      {
+        front: "가고 싶어요",
+        back: 'I want to go',
+        extra: '',
+      },
+      {
+        front: "보고 싶어요",
+        back: 'I want to see',
+        extra: '(or look, or watch)',
+      },
+      {
+        front: "먹고 싶어요",
+        back: 'I want to eat',
+        extra: '',
+      },
+      {
+        front: "가다",
+        back: 'To go',
+        extra: '',
+      },
+      {
+        front: "보다",
+        back: 'To see',
+        extra: '',
+      },
+      {
+        front: "먹다",
+        back: 'To eat',
+        extra: '',
+      },
+      {
+        front: "더",
+        back: 'More',
+        extra: '',
+      },
+      {
+        front: "더 먹고 싶어요",
+        back: 'I want to eat more',
+        extra: '',
+      },
+      {
+        front: "더 주세요 ",
+        back: 'Please give me more',
+        extra: '',
+      },
+    ],
+  },
 ];
+
+/*       {
+        front: "",
+        back: '',
+        extra: '',
+      }, */
