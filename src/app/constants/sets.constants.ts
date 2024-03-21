@@ -255,7 +255,7 @@ export const cardSets: Set[] = [
   {
     id: 6,
     groupId: 1,
-    name: "Hangeul Level 7 (Batchim)",
+    name: "Hangeul Level 6 (Batchim)",
     description:
       'Review of batchim and ending sounds - in depth',
     cards: [
