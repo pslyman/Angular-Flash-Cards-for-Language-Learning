@@ -18,13 +18,13 @@ export const cardSets: Set[] = [
         extra: "Neutral (unhappy face) sound. ㅡ represents the ground.",
       },
       {
-        front: "오 ",
+        front: "오",
         back: '"oh"',
         extra: `The "o" sound from "bold".`,
       },
       {
-        front: "우 ",
-        back: '"Ooh"',
+        front: "우",
+        back: '"ooh"',
         extra: "",
       },
       {
@@ -46,7 +46,7 @@ export const cardSets: Set[] = [
         front: "ㅇ",
         back: "Placeholder consonant.",
         extra:
-          "Makes no sound at the beginning of a syllable. Turns a vowel into a full syllable block by forming a pair. ",
+          "Makes no sound at the beginning of a syllable. Turns a vowel into a full syllable block by forming a pair.",
       },
       {
         front: ". (representation)",
@@ -55,7 +55,7 @@ export const cardSets: Set[] = [
       },
       {
         front: "How English words are Koreanized",
-        back: "Adding ㅡ to the end where it doesn't end in a vowel already.",
+        back: "Adding ㅡ to the end where it doesn't end with a batchim or vowel already.",
         extra: "",
       },
     ],
@@ -68,28 +68,28 @@ export const cardSets: Set[] = [
     cards: [
       {
         front: "ㄱ",
-        back: '"G" or "K", a "clicky" G. ',
+        back: '"G" or "K", a "clicky" G.',
         extra:
           "Push your tongue forward slightly more forward than an English G would normally require.",
       },
       {
         front: "ㅋ",
-        back: '"K".',
+        back: '"K"',
         extra: "",
       },
       {
-        front: "ㄴ ",
+        front: "ㄴ",
         back: '"N" sound',
         extra: 'Tongue bottom of upper teeth. It\'s a "soft N".',
       },
       {
         front: "ㄷ",
         back: "D/Th",
-        extra: "Keep tongue on top lower teeth",
+        extra: "Keep tongue on top of lower teeth",
       },
       {
         front: "ㄹ",
-        back: 'A rolling "R". Can resemble the "L" sound in the middle of a word. ',
+        back: 'A rolling "R". Can resemble the "L" sound in the middle of a word.',
         extra: "",
       },
       {
@@ -104,27 +104,27 @@ export const cardSets: Set[] = [
       },
       {
         front: "ㄲ",
-        back: '"G".',
+        back: '"G"',
         extra: "",
       },
       {
         front: "ㄸ",
-        back: '"D". ',
+        back: '"D"',
         extra: "",
       },
       {
         front: "ㅌ",
-        back: '"T".',
+        back: '"T"',
         extra: "",
       },
       {
         front: "ㅍ",
-        back: '"P".',
+        back: '"P"',
         extra: "",
       },
       {
         front: "ㅃ",
-        back: '"B".',
+        back: '"B"',
         extra: "",
       },
       {
@@ -158,7 +158,7 @@ export const cardSets: Set[] = [
       },
       {
         front: "ㅊ",
-        back: 'ㅊ= added friction and air to ㅈ (between "j" and "ch"). ',
+        back: 'ㅊ= added friction and air to ㅈ (between "j" and "ch").',
         extra: "",
       },
       {
@@ -168,7 +168,7 @@ export const cardSets: Set[] = [
       },
       {
         front: "ㅉ",
-        back: 'Added friction to (ㅈ) like "t". ',
+        back: 'Added friction to (ㅈ) like "t".',
         extra: "",
       },
     ],
@@ -181,7 +181,7 @@ export const cardSets: Set[] = [
     cards: [
       {
         front: "ㅘ",
-        back: '"Wah". ',
+        back: '"Wah"',
         extra: "",
       },
       {
@@ -196,7 +196,7 @@ export const cardSets: Set[] = [
       },
       {
         front: "ㅔ",
-        back: 'Ai, or "eh" much like ㅐ(which is more open). ',
+        back: 'Ai, or "eh" much like ㅐ(which is more open).',
         extra: "In most cases, functionally identical",
       },
       {
@@ -208,7 +208,7 @@ export const cardSets: Set[] = [
         front: "ㅚ",
         back: '"Weh" with an "ai" sound',
         extra:
-          'This one is less intuitive because there\'s no "ee" or "oh" sounds',
+          'This one is less intuitive because there\'s no "ee" or "oh" sounds.',
       },
       {
         front: "ㅙ",
@@ -223,7 +223,7 @@ export const cardSets: Set[] = [
       {
         front: "ㅢ",
         back: "eu-ee",
-        extra: "This is phonetic, say as seen. ",
+        extra: "This is phonetic, say as seen.",
       },
     ],
   },
@@ -236,7 +236,7 @@ export const cardSets: Set[] = [
     cards: [
       {
         front: "ㅇ ending in a syllable block.",
-        back: 'Ending "ng" sound, like sting and ring. ',
+        back: 'Ending "ng" sound, like sting and ring.',
         extra: "",
       },
       {
@@ -313,7 +313,7 @@ export const cardSets: Set[] = [
         front: "감사합니다",
         back: "Thank you.",
         extra:
-          "감사 = appreciation, thankfulness, gratitude. 합니다 = I do, I am doing. ",
+          "감사 = appreciation, thankfulness, gratitude. 합니다 = I do, I am doing.",
       },
       {
         front: "네",
@@ -395,7 +395,7 @@ export const cardSets: Set[] = [
         extra: "",
       },
       {
-        front: "아니에요 ",
+        front: "아니에요",
         back: "To be not (polite, present tense).",
         extra: "Can also be said in response to 'thank you'.",
       },
@@ -515,7 +515,7 @@ export const cardSets: Set[] = [
         extra: '',
       },
       {
-        front: "더 주세요 ",
+        front: "더 주세요",
         back: 'Please give me more',
         extra: '',
       },
